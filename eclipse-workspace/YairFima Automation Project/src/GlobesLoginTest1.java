@@ -15,6 +15,7 @@ public static void main(String[] args) {
  WebDriver driver= new ChromeDriver();
  
  driver.get("https://www.globes.co.il");
+ 
  driver.findElement (By.id("Login_connect_Span")).click();
  
  driver.findElement(By.id("email")).sendKeys("yair-f@globes.co.il");
@@ -26,7 +27,7 @@ public static void main(String[] args) {
  System.out.println (driver.getTitle());
  
  driver.close();
- 
+      
  
  
  
