@@ -5,7 +5,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class ShareToSocialFromArticle {
 
 public static void main(String[] args) {
-	//Test to share article to facebook
+	//Test 3 :  share article to facebook from globes article
 	
  System.setProperty("webdriver.chrome.driver", "C:\\Users\\yair-f\\Desktop\\chromedriver.exe");
 		 
