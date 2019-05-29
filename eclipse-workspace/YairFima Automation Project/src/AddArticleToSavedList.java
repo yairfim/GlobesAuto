@@ -8,7 +8,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class AddArticleToSavedList {
-	//Test of adding specific article to saved articles page
+	
+	//Test 5 :  adding specific article to saved articles page (personal area on globes)
 
 public static void main(String[] args) throws InterruptedException {
 		
