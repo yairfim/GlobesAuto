@@ -6,7 +6,9 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class SpecialProjectGlobesTest {
 
 	public static void main(String[] args) throws InterruptedException {
-	//Test 1 : Share The Main Project to mail option
+		
+	//Test 4 : Share The Main page of special Project to mail option
+		
 	 System.setProperty("webdriver.chrome.driver", "C:\\Users\\yair-f\\Desktop\\chromedriver.exe");
 
 	 
