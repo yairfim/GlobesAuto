@@ -26,8 +26,7 @@ public static void main(String[] args) {
  
  System.out.println (driver.getTitle());
  
- driver.close();
-      
+ System.out.println("yair-f@globes is succesfuly log in to globes");      
  
  
  
