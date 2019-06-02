@@ -25,6 +25,8 @@ public class SpecialProjectGlobesTest {
 	 driver.findElement(By.className("closetext")).click();
 	 
 	 driver.manage().window().maximize();
+	 
+	 System.out.println("mail program opened and link of project is ready to send");
 
 	 
 	
