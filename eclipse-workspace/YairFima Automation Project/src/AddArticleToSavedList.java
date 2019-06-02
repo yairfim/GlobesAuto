@@ -3,6 +3,7 @@
 import java.util.List;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -20,8 +21,22 @@ public static void main(String[] args) throws InterruptedException {
 		 String sArticleID = "https://www.globes.co.il/news/article.aspx?did=1001286537";
 		 
 		 driver.get(sArticleID);
-		 	
-		 driver.findElement(By.className("favList")).click();
+		 
+
+	      JavascriptExecutor js = (JavascriptExecutor) driver;
+		 
+		   WebElement favList = driver.findElement(By.className("favList"));
+		     
+		   js.executeScript("arguments[0].scrollIntoView();", favList);
+		   
+		   Thread.sleep(300);
+		   
+		   favList.click();
+		 
+	
+		// driver.findElement(By.className("favList")).click();
+		 
+	
  
 		 driver.findElement(By.id("email")).sendKeys("yair-f@globes.co.il");
 		 
@@ -56,5 +71,6 @@ public static void main(String[] args) throws InterruptedException {
 		
 		 
 	}
+
 
 }
