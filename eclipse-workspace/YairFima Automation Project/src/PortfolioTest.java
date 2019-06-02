@@ -15,31 +15,30 @@ public static void main(String[] args) {
 
 	 WebDriver driver= new ChromeDriver();
 	 
+	 //driver page to url 
 	 driver.get(sDriverURL);
-		 
+	 
+	 driver.manage().window().maximize();
+	 
+	//Login process	 
 	  Login(driver);
 	  
-		 driver.manage().window().maximize();
-
-	  		 
-	// driver.findElement(By.xpath("//*[@id='cancel_login']/img")).click(); // to dismiss window with x button
 	 
-
-
-	  WebElement add2tik = driver.findElement(By.xpath("//*[@id='contentColumn']/div[1]/a"));
-	  
-	  String jsFunction = add2tik.getAttribute("href");
-	  
-	    JavascriptExecutor js = (JavascriptExecutor) driver;
-
-	    js.executeScript(jsFunction); 
-	 
-
-
-
+	  LocateAndClickPortfolioBtn(driver);  
 
 	}
 
+private static void LocateAndClickPortfolioBtn(WebDriver driver) {
+
+    WebElement TikBtn = driver.findElement(By.xpath("//*[@id='contentColumn']/div[1]/a"));
+	  
+	 String jsFunction = TikBtn.getAttribute("href");
+	  
+    JavascriptExecutor js = (JavascriptExecutor) driver;
+
+	 js.executeScript(jsFunction); 
+	
+}
 private static void Login(WebDriver driver)
 {
 	 driver.findElement (By.id("Login_connect_Span")).click();
@@ -50,5 +49,6 @@ private static void Login(WebDriver driver)
 		 
 	 driver.findElement (By.id("signin")).click();
 }
+
 
 }
