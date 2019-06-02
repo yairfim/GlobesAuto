@@ -16,24 +16,26 @@ public static void main(String[] args) {
  
  driver.findElement(By.xpath("//*[@id='topWrap']/div[1]/div[1]/h2/a")).click();
 
- 
- // Get Link to share on facebook
- String facebookURL = driver.findElement(By.className("facebook")).getAttribute("href");
- 
- driver.get(facebookURL);
- 
- driver.findElement(By.id("email")).sendKeys("globestest18@gmail.com");
+ // log in and share Link to share on facebook
 
- driver.findElement(By.id("pass")).sendKeys("globes2018");
-
- driver.findElement(By.name("login")).click();
+ FacebookLoginAndShare(driver);
  
- driver.findElement(By.id("u_0_24")).click();
+ System.out.println("article succesfully shared on facebook feed ");
  
- driver.get("https://www.facebook.com/globestest.globestest.7");
- 
- 
-
 	}
+private static void FacebookLoginAndShare (WebDriver dr) {
+	 String facebookURL = dr.findElement(By.className("facebook")).getAttribute("href");
+	 
+	 dr.get(facebookURL);
+	 
+	 dr.findElement(By.id("email")).sendKeys("globestest18@gmail.com");
 
+	 dr.findElement(By.id("pass")).sendKeys("globes2018");
+
+	 dr.findElement(By.name("login")).click();
+	 
+	 dr.findElement(By.id("u_0_24")).click();
+	 
+	 dr.get("https://www.facebook.com/globestest.globestest.7");
+}
 }
