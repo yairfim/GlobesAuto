@@ -27,7 +27,6 @@ public class EnewsPaperTesT {
 
 		 
 		 WebElement element = driver.findElement(By.className("sherut"));
-
 	        Actions action = new Actions(driver);
 
 	        action.moveToElement(element).build().perform();
