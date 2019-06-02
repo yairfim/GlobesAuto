@@ -5,6 +5,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class GlobesLoginTest1 {
 
 public static void main(String[] args) {
+	
 
 //create driver object for chrome browser
 	
@@ -13,7 +14,7 @@ public static void main(String[] args) {
  System.setProperty("webdriver.chrome.driver", "C:\\Users\\yair-f\\Desktop\\chromedriver.exe");
 	
  WebDriver driver= new ChromeDriver();
- 
+  
  driver.get("https://www.globes.co.il");
  
  driver.findElement (By.id("Login_connect_Span")).click();
