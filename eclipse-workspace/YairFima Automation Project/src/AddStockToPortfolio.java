@@ -66,7 +66,7 @@ public class AddStockToPortfolio {
   WebElement el = driver.findElement(By.name("ctl00$UC1$imgConfirmBuySaleMsg"));
   el.click();
   
-  Thread.sleep(3000);
+  Thread.sleep(3000);      
   
   
   //===============================Select Option Checkbox============================
