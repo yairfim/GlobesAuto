@@ -40,10 +40,6 @@ public static void main(String[] args)  {
 	      
 	  
 	     
-//	     WebDriverWait wait =new WebDriverWait (driver,10);
-//	     wait.until(ExpectedConditions.elementToBeClickable(driver.findElement (By.id("reset_password"))));
-//	     driver.findElement(By.id("reset_password")).click();
-	     
 
 
  		 
