@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="15403" started-at="2019-08-29T16:44:30Z" finished-at="2019-08-29T16:44:45Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="15403" started-at="2019-08-29T16:44:30Z" finished-at="2019-08-29T16:44:45Z">
+      <class name="com.yair_f.globesweb.SubscribeToTevaTagitTest10">
+        <test-method status="PASS" signature="initBrowser()[pri:0, instance:com.yair_f.globesweb.SubscribeToTevaTagitTest10@57fffcd7]" name="initBrowser" is-config="true" duration-ms="2801" started-at="2019-08-29T16:44:30Z" finished-at="2019-08-29T16:44:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initBrowser -->
+        <test-method status="PASS" signature="subscribeToTagit()[pri:0, instance:com.yair_f.globesweb.SubscribeToTevaTagitTest10@57fffcd7]" name="subscribeToTagit" duration-ms="11868" started-at="2019-08-29T16:44:33Z" finished-at="2019-08-29T16:44:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- subscribeToTagit -->
+        <test-method status="PASS" signature="shutDownSelenium()[pri:0, instance:com.yair_f.globesweb.SubscribeToTevaTagitTest10@57fffcd7]" name="shutDownSelenium" is-config="true" duration-ms="721" started-at="2019-08-29T16:44:44Z" finished-at="2019-08-29T16:44:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shutDownSelenium -->
+      </class> <!-- com.yair_f.globesweb.SubscribeToTevaTagitTest10 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

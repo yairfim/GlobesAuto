@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Globes Automation]">
+  <listeners>
+    <listener class-name="config.Listener"/>
+  </listeners>
+  <test thread-count="5" name="sanity(failed)">
+    <classes>
+      <class name="com.yair_f.yair_f.GoogleLoginTest3">
+        <methods>
+          <include name="login"/>
+          <include name="initBrowser"/>
+          <include name="shutDownSelenium"/>
+        </methods>
+      </class> <!-- com.yair_f.yair_f.GoogleLoginTest3 -->
+    </classes>
+  </test> <!-- sanity(failed) -->
+</suite> <!-- Failed suite [Globes Automation] -->
